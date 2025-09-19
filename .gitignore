@@ -1,0 +1,19 @@
+# Ignore local environment files and folders
+.env/
+.env
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore Node.js dependency folder and lock files
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# Ignore build and temporary directories
+.vite/
+.vite-temp/
+
+# Ignore sensitive JSON file with API info
+Backend/Config/artistsphere-cdab2-26b0de95ff1c.json

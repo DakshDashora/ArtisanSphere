@@ -117,17 +117,21 @@ return (
 
       <div className="as-field">
         <label className="as-label">{t.category}</label>
-        <select
-          className="as-input"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-        >
-          <option value="textile">{t.textile}</option>
-          <option value="pottery">{t.pottery}</option>
-          <option value="wood">{t.wood}</option>
-          <option value="metal">{t.metal}</option>
-          <option value="other">{t.other}</option>
-        </select>
+       
+            <select
+              className="as-input"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option value="All">{t.allProducts}</option>
+              <option value="textile">{t.categories.textile}</option>
+              <option value="pottery">{t.categories.pottery}</option>
+              <option value="wood">{t.categories.wood}</option>
+              <option value="metal">{t.categories.metal}</option>
+              <option value="painting">{t.categories.painting}</option>
+              <option value="stone">{t.categories.stone}</option>
+              <option value="other">{t.categories.other}</option>
+            </select>
       </div>
 
       <div className="as-field">

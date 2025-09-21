@@ -1,1 +1,1 @@
-export  const BASE_URL="http://127.0.0.1:8000/"
+export  const BASE_URL=" https://my-backend-954502962692.us-central1.run.app/"

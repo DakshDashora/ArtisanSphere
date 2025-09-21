@@ -1,4 +1,4 @@
-import base64
+
 from datetime import datetime
 import httpx
 import firebase_admin

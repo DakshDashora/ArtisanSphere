@@ -18,7 +18,7 @@ export default function Profile() {
   }
 
   return (
-    <div className="as-container ">
+    <div className="as-container as-profile-c">
       <h1 className="as-section-title">{t.profile || "Profile"}</h1>
 
       <div className="as-card as-profile">

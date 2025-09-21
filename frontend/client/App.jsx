@@ -24,6 +24,7 @@ import UnderProduction from "./pages/UnderProduction";
 import Profile from "./pages/Profile";
 import SearchResults from "./pages/SearchResults";
 import ExploreMarketplace from "./pages/ExploreMarketplace";
+import ProductPage from "./pages/ProductPage";
 const App = () => (
   <ThemeProvider>
     <LanguageProvider>
@@ -94,6 +95,16 @@ const App = () => (
                   </ProtectedRoute>
                 }
               />
+
+              <Route
+                path="/product/:id"
+                element={
+                  <ProtectedRoute >
+                    <ProductPage />
+                  </ProtectedRoute>
+                }
+              />
+
               <Route
                 path="/customer/cart"
                 element={

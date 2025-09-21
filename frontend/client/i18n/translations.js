@@ -109,6 +109,8 @@ export const translations = {
       wood: "Wood",
       metal: "Metal",
       other: "Other",
+      painting:"Painting",
+      stone:"Stone",
     },
   },
   hi: {
@@ -221,6 +223,8 @@ export const translations = {
       wood: "लकड़ी",
       metal: "धातु",
       other: "अन्य",
+      painting: "चित्रकला",
+      stone: "पत्थर",
     },
   },
 };

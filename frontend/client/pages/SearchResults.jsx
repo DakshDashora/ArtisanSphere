@@ -70,7 +70,7 @@ export default function SearchResults() {
               <div className="as-product-body">
                 <div className="as-product-title">{p.title}</div>
                 <div className="as-product-meta">
-                  <span className="as-chip">{p.category}</span>
+                  <span className="as-chip">{t.categories[p.category]}</span>
                   <span className="as-price">₹{p.price}</span>
                 </div>
                 <button

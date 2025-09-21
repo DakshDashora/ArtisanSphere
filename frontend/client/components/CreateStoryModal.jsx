@@ -243,7 +243,7 @@ export default function CreateStoryPage() {
             <button className="as-btn" onClick={submitAnswer}>
               {t.submit}
             </button>
-            <button className="as-btn as-btn-danger" onClick={stopInterview}>
+            <button className="as-btn" onClick={stopInterview}>
               {t.stopInterview}
             </button>
           </div>

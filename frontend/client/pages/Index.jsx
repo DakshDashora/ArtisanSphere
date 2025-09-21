@@ -105,13 +105,16 @@ export default function Index() {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option>All</option>
-              <option>Textile</option>
-              <option>Pottery</option>
-              <option>Wood</option>
-              <option>Metal</option>
-              <option>Other</option>
+              <option value="All">{t.allProducts}</option>
+              <option value="textile">{t.categories.textile}</option>
+              <option value="pottery">{t.categories.pottery}</option>
+              <option value="wood">{t.categories.wood}</option>
+              <option value="metal">{t.categories.metal}</option>
+              <option value="painting">{t.categories.painting}</option>
+              <option value="stone">{t.categories.stone}</option>
+              <option value="other">{t.categories.other}</option>
             </select>
+
             <div className="as-range">
               <label>{t.price}: <strong>₹{maxPrice}</strong></label>
               <input

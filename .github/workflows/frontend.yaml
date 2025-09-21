@@ -9,27 +9,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repo
       - uses: actions/checkout@v3
 
+      # Setup Node.js
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      # Install dependencies
       - name: Install dependencies
         run: npm install
         working-directory: ./frontend
 
+      # Build React app
       - name: Build React app
         run: npm run build
         working-directory: ./frontend
 
+      # Deploy to Firebase Hosting
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          entryPoint: ./frontend        # <- points to folder with firebase.json
           channelId: live
           projectId: <YOUR_FIREBASE_PROJECT_ID>
-          target: hosting   # optional if using multiple targets
-          public: ./frontend/dist/spa   # << point to your build folder

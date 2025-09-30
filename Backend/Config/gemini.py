@@ -9,7 +9,6 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "Config/artistsphere-cdab2-26b0de
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-
 vision_client = vision.ImageAnnotatorClient()
 db = firestore.Client()
-model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
+model = genai.GenerativeModel("models/gemini-2.5-flash")

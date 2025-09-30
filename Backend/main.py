@@ -7,7 +7,7 @@ app = FastAPI()
 # Allow all origins for now (easier in Cloud Run)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://artistsphere-cdab2.web.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]

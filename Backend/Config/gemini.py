@@ -4,8 +4,7 @@ from google.cloud import firestore
 import google.generativeai as genai
 import os
 
-#use your own api credentials here
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "Config/artistsphere-cdab2-26b0de95ff1c.json"
+
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
